@@ -1,0 +1,12 @@
+/*1. Faça um algoritmo que inicialize uma variável X com o valor 5 e uma variável Y com o valor 3. Calcule e mostre a soma de X e Y*/
+
+#include <stdio.h>
+
+int main () {
+ int soma, x = 5, y = 3;
+  soma = x + y;
+   printf("soma = %d\n", soma);
+   
+return 0;
+
+}   
