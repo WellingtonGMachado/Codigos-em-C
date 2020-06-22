@@ -1,0 +1,13 @@
+/*3. Faça um algoritmo que inicialize uma variável X com o valor 9.0 e uma variável Y com o valor 2.0. Calcule e mostre a divisão de X por Y.
+Também, calcule e mostre o resto da divisão.*/
+
+#include <stdio.h>
+
+int main () {
+ float div, x = 9.0, y = 2.0;
+  div = x/y;
+   printf("%.2f\n", div);
+   
+return 0;
+
+}    
