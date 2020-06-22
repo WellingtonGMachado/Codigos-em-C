@@ -1,0 +1,14 @@
+/*4. Faça um algoritmo que inicialize uma variável Salario com 1500 e uma variável Reajuste com 0.04. Calcule o novo salário,
+considerando o reajuste.*/
+
+#include <stdio.h>
+
+int main () {
+ int salario = 1500;
+ float reajuste = 0.04, novo_salario;
+  novo_salario = salario - (salario*reajuste);
+   printf("salario reajustado = %.2f\n", novo_salario);
+
+return 0;
+
+}   
