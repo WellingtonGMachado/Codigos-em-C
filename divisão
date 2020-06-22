@@ -1,0 +1,12 @@
+/*2. Faça um algoritmo que inicialize uma variável X com o valor 4 e uma variável Y com o valor 2. Calcule e mostre a divisão de X por Y.*/
+
+#include <stdio.h>
+
+int main () {
+ int div, x = 4, y = 2;
+  div = x/y;
+   printf("div = %d\n", div);
+
+return 0;
+
+}     
