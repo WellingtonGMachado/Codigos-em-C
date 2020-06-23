@@ -1,0 +1,16 @@
+/*Escreva um programa para ler as dimensões de uma cozinha retangular (comprimento, largura e altura), 
+calcular e escrever a quantidade de caixas de azulejos para se colocar em todas as suas paredes
+(considere que não será descontado a área ocupada por portas e janelas). Cada caixa de azulejos cobre a área de 1.5 m2.*/
+
+#include <stdio.h>
+
+int main () {
+int dim, c, l, a; //c = comprimento, l = largura e a = altura
+ printf("Digite as dimensoes para o calculo de area retangular de sua cozinha: \n");
+  scanf("%d %d %d", &c, &l, &a);
+   dim = c*l*a;
+    printf("Sua area e de: %d\n", dim);
+
+return 0;
+
+}     
