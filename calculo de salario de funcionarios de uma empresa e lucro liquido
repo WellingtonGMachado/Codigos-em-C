@@ -1,0 +1,29 @@
+/*Uma loja vende bicicletas com um acréscimo de 50 % sobre o seu preço de custo. Ela paga a cada vendedor 2 salários mínimos mensais,
+mais uma comissão de 15 % sobre o preço de custo de cada bicicleta vendida, dividida igualmente entre eles.
+Escreva um programa que leia o número de empregados da loja, o valor do salário mínimo,
+o preço de custo de cada bicicleta, o número de bicicletas vendidas, calcule e escreva:
+O salário final de cada empregado e o lucro (líquido) da loja. */
+
+#include <stdio.h>
+
+int main () {
+ int empregados, salarioM, c_bike, n_bike, salarioF, lucro_loja; //onde c_bike = custo da bike, n_bike = numero de bikes
+  
+printf("Digite o numero de empregados da tua empresa: \n");
+ scanf("%d", &empregados);
+  printf("Digite o valor atual do salario minimo: \n");
+   scanf("%d", &salarioM);
+    printf("Digite o custo da bicicleta e numero de bicicletas vendidas: \n");
+     scanf("%d %d", &c_bike, &n_bike);
+
+c_bike = (c_bike*50/100)+c_bike;
+ n_bike = c_bike*n_bike;
+  salarioM = salarioM*2;
+   salarioF = empregados*salarioM;
+    lucro_loja = (n_bike - salarioF);
+     printf("Salario liquido do empregado e de: %d R$\n", salarioM);
+      printf("Lucro liquido da loja e de: %d R$\n", lucro_loja);       
+        
+return 0;
+
+}
