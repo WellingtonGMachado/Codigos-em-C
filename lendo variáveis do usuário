@@ -1,0 +1,17 @@
+/*5. Reescreva os algoritmos anteriores para que os valores sejam lidos do usuário.*/
+
+#include <stdio.h>
+
+int main () {
+ int salario;
+ float reajuste, novo_salario;
+  printf("Digite o salario: \n");
+   scanf("%d", &salario);
+    printf("Digite o valor do reajuste: \n"); 
+     scanf("%f", &reajuste); 
+      novo_salario = salario - (salario*reajuste);
+       printf("salario reajustado = %.2f\n", novo_salario);
+       
+return 0;
+
+}       
