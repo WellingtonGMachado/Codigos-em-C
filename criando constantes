@@ -1,0 +1,16 @@
+/*6. Reescreva o algoritmo do exercício 4 declarando Reajuste como uma constante.*/
+
+#include <stdio.h>
+#define reajuste 0.04
+
+int main () {
+ float salario, novo_salario;
+  printf("Digite o salario: \n");
+   scanf("%f", &salario);
+    novo_salario = salario - (salario*reajuste);
+     printf("salario reajustado = %.2f\n", novo_salario);
+
+return 0;
+
+}     
+ 
