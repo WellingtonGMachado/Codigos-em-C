@@ -1,0 +1,29 @@
+/*Um motorista de taxi deseja calcular o rendimento de seu carro na praça. Sabendo se que o preço do combustível 
+é de R$ 4,70, escreva um programa para ler: a marcação do odômetro (Km) no início do dia, a marcação (Km) no final do dia,
+o número de litros de combustível gasto e o valor total (R$) recebido dos passageiros. Calcular
+e escrever: a média do consumo em Km/L e o lucro (líquido) do dia.*/
+
+#include <stdio.h>
+#define combustivel 4.70
+
+int main () {
+float m_odometro, i_dia, f_dia, c_gasto, vt_recebido, media_c, lucro;
+ 
+ printf("Digite a marcacao inicial do odometro e marcacao final: \n");
+  scanf("%f %f", &i_dia, &f_dia);
+   printf("Digite o numero de litros de combustivel gasto: \n");
+    scanf("%f", &c_gasto);
+     printf("Digite o valor total recebido dos passageiros: \n");
+      scanf("%f", &vt_recebido);
+ 
+ c_gasto = c_gasto*combustivel;
+  m_odometro = f_dia - i_dia;
+   printf("KM final: %f\n", m_odometro);
+    media_c = (m_odometro/c_gasto);      
+     printf("Consumo em KM/L: %f\n", media_c);
+      lucro = vt_recebido - (media_c*combustivel);
+       printf("Lucro (liquido) do dia: %f\n", lucro);
+       
+return 0;
+
+}
