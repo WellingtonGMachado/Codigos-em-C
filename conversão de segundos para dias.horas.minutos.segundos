@@ -1,0 +1,22 @@
+/*Escreva um programa que leia a quantidade de segundos e mostre a quantidade de dias, horas e minutos correspondentes. 
+Por exemplo, uma entrada de 100000s deve apresentar o resultado de 1 dia, 3 horas, 46 minutos e 40 segundos.*/
+// 1min = 60s, 1h=3600min, 1dia = 24h*3600 = 86400
+#include <stdio.h>
+
+int main () {
+
+int segundos, minutos, horas, dias, restod, restoh, restom;
+ printf("Digite o tempo em segundos: \n");
+  scanf("%d", &segundos);
+   dias = segundos/86400;
+    restod = segundos%86400;
+     horas = restod/3600; 
+      restoh = restod%3600;
+       minutos = restoh/60;
+        restom = restoh%60;
+         printf("Seu tempo e de: %d dias, %d horas, %d minutos e %d segundos\n", dias, horas, minutos, restom); 
+
+return 0;
+
+}         
+  
