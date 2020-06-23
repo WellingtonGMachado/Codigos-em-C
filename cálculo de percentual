@@ -1,0 +1,23 @@
+/*Escreva um programa para ler o número de eleitores de um município, o número de votos brancos, nulos e válidos.
+Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.*/
+
+#include <stdio.h>
+
+int main () {
+ float n_eleitores, v_brancos, v_nulos, v_validos, percentual;
+  printf("Digite o numero total de eleitores do municipio: \n");
+   scanf("%f", &n_eleitores);
+    printf("Digite o numero de votos brancos, nulos e validos: \n");
+     scanf("%f %f %f", &v_brancos, &v_nulos, &v_validos);
+      percentual = (v_brancos/n_eleitores)*100;
+       printf("Numero de votos brancos: %.2f\n", percentual);
+        percentual = (v_nulos/n_eleitores)*100;
+         printf("Numero de votos nulos: %.2f\n", percentual);
+          percentual = (v_validos/n_eleitores)*100;
+           printf("Numero de votos validos: %.2f\n", percentual);
+
+return 0;
+
+}             
+
+
