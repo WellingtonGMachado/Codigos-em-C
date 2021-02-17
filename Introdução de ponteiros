@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () {
+int *x;
+int valor1, valor2;
+
+valor1 = 35;
+x = &valor1; //atribuindo o endereço de valor ao ponteiro x
+valor2 = *x; //atribuindo o conteudo da variável apontada pelo ponteiro x ao valor2
+
+printf("Endereco da variavel comum valor1: %p\n", &valor1);
+printf("Lendo o conteudo do ponteiro x: %p\n",  x);
+printf("Endereco da variavel ponteiro x: %p\n", &x);
+printf("Conteudo da variavel apontada por x: %d\n", *x);
+printf("Conteudo da variavel comum valor2: %d\n", valor2);
+
+
+return 0;
+
+}
